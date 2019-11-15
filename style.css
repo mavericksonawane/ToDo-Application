@@ -1,0 +1,119 @@
+/*
+    This is the CSS code regarding the ToDo Application...
+    As you can guess..It contains all the styling of the Application.
+    programmer: Mayur Sonawane
+    github: mavericksonawane
+    email : mavericksonawane@gmail.com
+    ************************* BeAMaverick ********************************
+*/
+
+body {
+    background-color: rgb(40, 37, 61);
+}
+
+#container {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background: black;
+    height: 800px;
+    overflow-y: auto;
+    color: white;
+    border: 10px solid red;
+    border-radius: 10px;
+}
+#container h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: Yellow;
+}
+#container ul {
+    margin-top: 50px;
+    padding-left: 0;
+}
+#container ul li {
+    list-style: none;
+    border: 2px solid brown;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+}
+#container ul li label {
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+    font-size: 20px;
+}
+#container ul li #check {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    -webkit-appearance: none;
+    border: 2px solid blue;
+    position: relative;
+    outline: 0;
+}
+#container ul li #check:checked:after { 
+    content: "\2714";
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    color: orange;
+}
+#container ul li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
+#container .controls {
+    width: 60%;
+    margin: auto;
+}
+#container .controls #input {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+#container .controls button {
+    width: 100%;
+    background: white;
+    border: none;
+    height: 30px;
+    margin-top: 2px;
+    cursor: pointer;
+    color: white;
+}
+#container .controls button:focus {
+    outline: 0;
+}
+#container .controls button:hover {
+    transform: scale(1.05);
+}
+#container .controls #add{
+    background-color: green;
+    border-radius: 10px;
+}
+#container .controls #remove {
+    background-color: red;
+    border-radius: 10px;
+}
+#container .mycheck {
+    opacity: 1;
+    border-radius: 10px;
+}
+.visual {
+    opacity: 1 !important;
+    border-radius: 10px;
+}
